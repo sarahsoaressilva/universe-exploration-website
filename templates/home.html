@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/output.css" rel="stylesheet">
+    <title> Planets </title>
+</head>
+<body class="bg-black space-y-10">
+    <!-- Initial section -->
+    <!-- Navigation -->
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-center p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only"> Your Company </span>
+                </a>
+            </div>
+            <div class="hidden lg:text-center lg:flex lg:gap-x-12">
+                <a href="#" class="text-sm font-semibold leading-6 text-white"> Home </a>
+                <a href="#" class="text-sm font-semibold leading-6 text-white"> Explore Planets </a>
+                <a href="#" class="text-sm font-semibold leading-6 text-white"> Behind Mars </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner introduction -->
+    <section>   
+
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" 
+            aria-hidden="true">
+            </div>
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                Welcome to Universe Exploration.
+                </h1>
+                <p class="mt-6 text-lg leading-8 text-gray-600">
+                Here, we all are astronauts explorating the universe.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+        <!--
+            <canvas id="planetas" 
+            class="planets_canvas"></canvas>
+        -->
+        </div>
+    </section>
+
+    <!-- Apresentation introduction -->
+    <section >
+
+        <div class="container mx-auto">
+
+            <div class="flex flex-row items-center justify-items-center">
+
+                <div class="w-full">
+                    <p class="text-4xl font-bold text-white text-center"> 
+                        Want to know more about the stars and the galaxy? 
+                    </p>
+                    <p class="text-white text-center p-2">
+                    Check our Galaxy Dictionary clicking on the button down bellow. 
+                    </p>
+                    <div class="flex justify-center items-center">
+                        <button class="text-white bg-purple-800 hover:bg-purple-900 focus:ring-4 focus:ring-blue-300 
+                        font-medium rounded-lg text-sm p-2.5 me-2 mb-2">
+                            <span> Explore more planets </span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>    
+
+    </section>
+
+    <!-- Mars introduction -->
+    <section>
+        
+        <div class="container mx-auto">
+
+            <div class="flex flex-row items-center lg:flex-row">
+
+                <div class="w-full lg:w-1/2">
+                    <p class="text-4xl font-bold text-white text-start p-2"> 
+                        Want to know more about Mars? 
+                    </p>
+                    <p class="text-white text-start p-2">
+                        Curious to see the latest discoveries? 
+                        Explore stunning images and learn more about the ongoing exploration of our neighboring planet by 
+                        clicking below. Mars awaits!
+                    </p>
+                    <button class="text-white bg-purple-800 hover:bg-purple-900 focus:ring-4 focus:ring-blue-300 
+                    font-medium rounded-lg text-sm p-2.5 me-2 mb-2">
+                        <span> Explore Mars </span>
+                    </button>
+                </div>
+                
+                <div class="w-full lg:w-1/2">
+                    <img src="/assets/mars.png" alt="" srcset="">
+                </div> 
+
+            </div>
+            
+        </div>    
+    </section>
+
+    <!-- Configure Three.js and others modules -->
+    <script type="module" src="/js/planets.js"></script>
+</body>
+</html>
